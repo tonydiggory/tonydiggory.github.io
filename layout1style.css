@@ -76,5 +76,8 @@ button{
     line-height: 24px;
     cursor: pointer;
 }
+button:hover{
+    cursor: pointer;
+}
 
 
