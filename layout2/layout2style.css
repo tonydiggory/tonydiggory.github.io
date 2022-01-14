@@ -16,7 +16,7 @@ title{
     margin: auto;
 }
 
-.info~*{
+.info~*:not(button){
     padding: 0px 24px;
     line-height: 21.6px;
     font-size: 14.4px;
@@ -77,17 +77,17 @@ span,span + p{
 }
 
 button{
-    padding-left: 0px !important;
-    margin-left: 24px !important;
-    font-size: 16px !important;
-    padding-top: 7px !important;
-    padding-bottom: 5px !important;
-    padding-right: 251.7px !important;
+    padding-left: 0px;
+    margin-left: 24px;
+    font-size: 16px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-right: 251.7px;
     border: none;
     text-decoration: none;
     background-color: #0000;
-    color: #3c78e8 !important;
-    line-height: 24px !important;
+    color: #3c78e8;
+    line-height: 24px;
     cursor: pointer;
     border-top: 0.5px solid #c4c4c4e3;
 }
