@@ -3,6 +3,9 @@
     box-sizing: border-box;
     display: block;
 }
+title{
+    display: none;
+}
 .card{
     background-color: #FFFFFF;
     width: 364.4px;
@@ -19,6 +22,7 @@ a+p{
     color: #464646;
     font-size: 14.4px;
     padding: 0px 24px;
+    padding-bottom: 7px;
 }
 a{
     font-weight: 400;
@@ -70,6 +74,7 @@ button{
     font-size: 16px;
     padding-top: 7px;
     padding-bottom: 5px;
+    padding-right: 251.7px;
     border: none;
     text-decoration: none;
     background-color: #0000;
@@ -77,8 +82,4 @@ button{
     line-height: 24px;
     cursor: pointer;
 }
-.info :last-child:hover{
-    cursor: pointer;
-}
-
 
