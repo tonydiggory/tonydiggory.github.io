@@ -4,6 +4,7 @@
     display: block;
 }
 .card{
+    background-color: #FFFFFF;
     width: 364.4px;
     font-family: 'Roboto', sans-serif;
     border-radius: 4px;
@@ -76,7 +77,7 @@ button{
     line-height: 24px;
     cursor: pointer;
 }
-button:hover{
+.info :last-child:hover{
     cursor: pointer;
 }
 
