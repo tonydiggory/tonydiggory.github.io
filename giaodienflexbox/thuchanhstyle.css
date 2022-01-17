@@ -1,4 +1,5 @@
 /* checkpoint */
+/* checkpoint2 */
 *{
     padding: 0;
     margin: 0;
@@ -142,6 +143,8 @@ i{
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+
 
 
 
