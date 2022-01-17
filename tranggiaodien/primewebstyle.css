@@ -1,0 +1,126 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    margin: auto;
+}
+
+title{
+    display: none;
+}
+
+.start-bar{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.logo{
+    height: 24px;
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #FF0000;
+}
+.logo p{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: bold;
+    padding-left: 5px;
+    color: #282828;
+}
+
+.start-bar-menu i{
+    width: 72px;
+    height: 60px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home{
+    width: 72px ;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.home-tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0px;
+    line-height: 14px;
+    font-size:10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.home-tab:hover{
+    background-color: #e6e6e6;
+}
+
+.home-tab i{
+    font-size:20px;
+}
+
+.logo *{
+    display: inline;
+}
+
+.content{
+    display: flex;
+
+}
+.card-slot{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+.card-holder{
+    display: inline-flex;
+    width: 30%;
+    padding: 30px 20px;
+}
+a {
+    text-decoration:none;
+}
+.card-content{
+    padding: 0px 24px;
+}
+h3{
+    color: #030303;
+    font-weight: 500;
+    font-size:18px;
+    line-height: 24px;
+}
+
+.card-info *{
+    display: inline;
+}
+
+.card-info p{
+    color: #606060;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.card-info i{
+    color: #606060;
+    font-size:3px;
+}
