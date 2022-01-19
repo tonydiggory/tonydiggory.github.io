@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+title{
+    display: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.suggestion-bar{
+    margin-top: 200px;
+    height: 340px;
+    width: 100%;
+    background-color: #0170ff;
+}
+
+.menu{
+    padding:5px 0px;
+    height: 100%;
+    width: 190px;
+    background-color: #fff;
+    box-shadow: #00000040 0px 0px 4px 0px;
+}
+
+.suggestion-menu{
+    position: relative;
+    margin-left: 160px;
+}
+
+.menu-root{
+    height: 100%;
+    width: 100%;
+}
+
+.sub-menu-1{
+    position: absolute;
+    left:190px;
+    top:0px;
+    display: none;
+}
+
+.sub-menu-2{
+    position: absolute;
+    left:190px;
+    top:0px;
+    display: none;
+}
+
+li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #757575;
+    font-size: 12px;
+    line-height: 27px;
+    height: 27px;
+    font-weight: 400;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+span{
+    color: #f57224;
+    height: 100%;
+    width: 27px;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+}
+
+li:hover{
+    background-color: #E3E3E3;
+    color:#f57224 ;
+}
+
+.LT:hover .sub-menu-2,.LT:hover .LT-icon{
+    display: block;
+}
+
+.TB:hover .sub-menu-1,.TB:hover .TB-icon{
+    display: block;
+}
