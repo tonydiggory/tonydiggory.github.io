@@ -19,6 +19,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to bottom right, #ed213a 0%, #93291e 100%);
 }
 
 .card-container{
@@ -36,7 +37,7 @@ body{
     width: 100%;
     background: linear-gradient(to bottom, #231e5d 0%, #325c98 100%);
     display: flex;
-    box-shadow: 6px 12px 8px #888888;
+    box-shadow: 4px 8px 8px #000000;
     position: absolute;
     z-index: 5;
     transition: all 0.9s;
