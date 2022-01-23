@@ -392,6 +392,7 @@ body{
     z-index: 2;
     border:2px solid #464646;
     transition: all 0.5s 1s;
+    
 }
 
 .box{
@@ -471,10 +472,12 @@ body{
 
 .card-cover:hover + .card .page-1 {
     transform: translateX(-180px);
+    box-shadow: 0px 15px 10px -8px #000000;
 }
 
 .card-cover:hover + .card .page-2 {
     transform: translateX(180px);
+    box-shadow: 4px 8px 8px #000000;
 }
 
 .page-2{
@@ -483,6 +486,7 @@ body{
     justify-content: center;
     background-color: #fff;
     overflow: hidden;
+    
 }
 
 .page-2 .hoadao{
