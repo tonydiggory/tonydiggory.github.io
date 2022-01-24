@@ -131,6 +131,7 @@ a{
     position: absolute;
     top: 14px;
     right: -11px;
+    /* transition: all 0.5s;*/
 }
 
 .startbar-text:hover{
@@ -164,6 +165,11 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.start-bar-cart:hover .cart-number{
+    background-color: transparent;
+    color: transparent;
 }
 
 .store-main-banner-clone{
