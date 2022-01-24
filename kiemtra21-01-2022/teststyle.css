@@ -382,16 +382,23 @@ a{
     flex-direction: column;
     justify-content: space-between;
     margin-right: 30px;
+    position: relative;
 }
 
 .arrival-item-card-image{
     height:85%;
     width: 100%;
+    overflow: hidden;
 }
 
 .arrival-item-card-image img{
     height: 100%;
     width: 100%;
+    transition: all 1s;
+}
+.arrival-item-card:hover img{
+    transform: scale(1.2);
+    filter: brightness(0.7);
 }
 
 .arrival-item-card-detail{
@@ -658,6 +665,12 @@ input[type='email']{
     color: transparent;
     transition: all 0.8s;
     cursor: pointer;
+}
+
+.arrival-item-card:hover .add-cart{
+    color: #000000;
+    border-color: #000000;
+    background-color: #FFF;
 }
 
 .store-product-card:hover .add-cart{
