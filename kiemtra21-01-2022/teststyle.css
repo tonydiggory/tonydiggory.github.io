@@ -491,6 +491,9 @@ a{
     font-size: 17px;
     margin-top: 10px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .store-footer-contact div{
@@ -511,6 +514,7 @@ input[type='email']{
     height: 25px;
     width: 160px;
     margin-right: 10px;
+    padding-right: 5px;
 }
 
 .store-footer-contact-email{
