@@ -26,7 +26,7 @@
 - Tạo file **index.html**.
 - Viết mã Javascript in ra dòng chữ "**Hello World**" trên màn hình console của trình duyệt.
 
-```javascript
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +61,7 @@ Mở file trên trình duyệt, sau đó **Bấm f12** hoặc **chuột phải +
 console.log("Hello world");
 ```
 
-```javascript
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
