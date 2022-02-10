@@ -56,7 +56,7 @@ Mở file trên trình duyệt, sau đó **Bấm f12** hoặc **chuột phải +
 - Tạo file **main.js** để viết mã Javascript (**main.js** nằm cùng cấp với **index.html**)
 - Nhúng file **main.js** vào file **index.html** thông qua thuộc tính **src** trong thẻ **script**
 
-```php
+```javascript
 // file main.js
 console.log("Hello world");
 ```
@@ -108,7 +108,7 @@ Sử dụng 2 cách sau để khai báo biến:
 
 - Khai báo biến và không gán giá trị cho biến: **let age;**
 - Khai báo biến và gán giá trị cho biến: **let age = 35;**
-```php
+```javascript
 // Khai báo biến và không gán giá trị cho biến
 let age;
 age = 35;
@@ -133,7 +133,7 @@ const pi = 3.14;
 
 Để kiểm tra kiểu dữ kiệu của 1 biến, chúng ta sử dụng toán tử **`typeof`**
 
-```php
+```javascript
 let number = 23;
 console.log(typeof number); // "number"
 
@@ -151,7 +151,7 @@ console.log(typeof name); // "string"
 
 **Ví dụ:** 
 
-```php
+```javascript
 let name = "Nguyễn Văn A";
 let email = "abc@gmail.com";
 ```
@@ -159,7 +159,7 @@ let email = "abc@gmail.com";
 #### Một số lưu ý
 Trường hợp trong chuỗi cũng có xuất hiện dấu nháy đơn hoặc nháy kép thì phải thêm ký tự \ đằng trước dấu nháy đó.
 
-```php
+```javascript
 /*let message = "Xin chào các bạn, mình tên là \"Thiên Cơ\". Mình sinh năm 2003";*/
 let message = 'Xin chào các bạn, mình tên là "Thiên Cơ". Mình sinh năm 2003';
 ```
@@ -168,7 +168,7 @@ Khi bạn muốn Enter xuống hàng một chuỗi thì bắt buộc phải sử
 
 **Ví dụ:**
 
-```php
+```javascript
 let message = 'Xin chào các bạn, ' +
 'mình tên là "Thiên Cơ". ' +
 'Mình sinh năm 2003';
@@ -176,7 +176,7 @@ let message = 'Xin chào các bạn, ' +
 
 #### Nối chuỗi trong Javascript
 Để nối chuỗi chúng ta sử dụng dấu + để ghép hai chuỗi (hoặc biến) lại với nhau.
-```php
+```javscript
 let firstName = "Nguyễn";
 let lastName = "Thiên Cơ";
 let fullName = firstName + " " + lastName;
@@ -184,7 +184,7 @@ console.log(fullName);                     //Nguyễn Thiên Cơ
 ```
 
 **Ví dụ:**
-```php 
+```javascript
 console.log(name + 10);                // "Cơ10"
 console.log(10 + 20 + name + 10 + 20); // "30Cơ1020"
 console.log(10+20-fullName);           // NaN : not a number
@@ -204,7 +204,7 @@ Khi khai báo chuỗi kiểu này có thể viết chuỗi trong nhiều dòng v
 
 Có thể dùng các biến, biểu thức ngay trong chuỗi với cú pháp như sau: 
 
-```php
+```javascript
 `string_text ${expression} string_text`
 ```
 
@@ -230,7 +230,7 @@ mình tên là "Nguyễn Thiên Cơ". Mình sinh năm 2003. Năm nay mình 19 tu
 *Number (số) là một tập hợp của các con số (0 – 9) không chứa dấu khoảng trắng và có thể chứa dấu trừ (-) nằm ở đầu để đại diện cho số âm.*
 
 **Ví dụ:**
-```php
+```javascript
 let age = 25;
 let num = 5.1;
 ```
@@ -252,7 +252,7 @@ Một số phương thức hay được sử dụng :
 
 **Ví dụ:**
 
-```php
+```javascript
 //Giá trị của PI
 console.log(Math.PI);
 
