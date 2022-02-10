@@ -281,4 +281,4 @@ console.log(Math.max(1,2,3,4));
 
 ## Hướng dẫn viết Markdown
 
-Link tham khảo : https://viblo.asia/helps/cach-su-dung-markdown-bxjvZYnwkJZ
+Link tham khảo : [https://viblo.asia/helps/cach-su-dung-markdown-bxjvZYnwkJZ](https://viblo.asia/helps/cach-su-dung-markdown-bxjvZYnwkJZ)
