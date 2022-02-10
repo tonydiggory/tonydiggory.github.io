@@ -26,7 +26,7 @@
 - Tạo file **index.html**.
 - Viết mã Javascript in ra dòng chữ "**Hello World**" trên màn hình console của trình duyệt.
 
-```php
+```javascript
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +61,7 @@ Mở file trên trình duyệt, sau đó **Bấm f12** hoặc **chuột phải +
 console.log("Hello world");
 ```
 
-```php
+```javascript
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -210,7 +210,7 @@ Có thể dùng các biến, biểu thức ngay trong chuỗi với cú pháp nh
 
 **Ví dụ:**
 
-```php
+```javascript
 let year = 2003;
 let message = `Xin chào các bạn,
 mình tên là "${fullName}". Mình sinh năm ${year}. Năm nay mình ${2022 - year} tuổi.`;
