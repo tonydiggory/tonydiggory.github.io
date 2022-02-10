@@ -1,7 +1,5 @@
 # Javascript Cơ Bản
 
-***
-
 ## Giới thiệu về Javascript
 
 **Javascript là gì?**
