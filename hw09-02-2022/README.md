@@ -108,6 +108,7 @@ Sử dụng 2 cách sau để khai báo biến:
 
 - Khai báo biến và không gán giá trị cho biến: **let age;**
 - Khai báo biến và gán giá trị cho biến: **let age = 35;**
+
 ```javascript
 // Khai báo biến và không gán giá trị cho biến
 let age;
