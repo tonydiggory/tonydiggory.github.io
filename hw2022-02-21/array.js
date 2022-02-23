@@ -55,17 +55,20 @@ function calcRemainder(arr){
         // Do % là phép chia modulo nên kết quả có thể âm 
         res[i] = Math.abs(arr[i] % 2);
     }
-    console.log(arr);
     return res;
 }
 console.log(calcRemainder(arr));
 
 
 // Bài 4: Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần
-function multiplyString(str){
-    return str.repeat(10);
+function repeatString(str) {
+    let res = [];
+    for(let i = 0; i < 10; i++){
+        res[i] = str;
+    }
+    return res.join("");
 }
-console.log(multiplyString("a"));
+console.log(repeatString("a"));
 
 
 // Bài 5: Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần, ngăn cách nhau bởi dấu gạch ngang.
