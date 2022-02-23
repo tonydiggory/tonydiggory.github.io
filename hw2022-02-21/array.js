@@ -70,7 +70,11 @@ console.log(multiplyString("a"));
 
 // Bài 5: Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần, ngăn cách nhau bởi dấu gạch ngang.
 // Ví dụ: repeatString(‘a’) => Kết quả trả về là ‘a-a-a-a-a-a-a-a-a-a’
-function multiplyStringSymbol(str){
-    return str + ("-"+str).repeat(9);
+function repeatStringWithDash(str) {
+    let res = [];
+    for(let i = 0; i < 10; i++){
+        res[i] = str;
+    }
+    return res.join("-");
 }
-console.log(multiplyStringSymbol("a"));
+console.log(repeatStringWithDash("a"));
