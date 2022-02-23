@@ -130,7 +130,7 @@ console.log(fruit);
 
 ***
 
-###JavaScript Array delete()
+### JavaScript Array delete()
 
 > **Lưu ý:**
 Khi sử dụng phương pháp `delete()`, các thành phần trong mảng có thể bị xóa dẫn đến *undefined holes* trong mảng; nên sử dụng `pop`() hoặc `shift()`.
