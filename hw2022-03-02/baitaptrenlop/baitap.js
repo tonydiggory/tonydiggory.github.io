@@ -1,3 +1,4 @@
+// checkpoint
 // Bài 1: Truy cập vào thẻ h1 có id=“heading” thay đổi màu chữ thành ‘red’, và in hoa nội dung của thẻ đó
 const heading1 = document.getElementById("heading");
 heading1.style.color = "red";

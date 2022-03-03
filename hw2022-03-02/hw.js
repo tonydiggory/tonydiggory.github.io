@@ -1,3 +1,4 @@
+// checkpoint
 // Câu 1. Tạo 1 thẻ p có id=“text”, có nội dung bất kỳ (có thể tạo bằng HTML hay Javascript - tùy chọn). Yêu cầu
 // Đặt màu văn bản thành #777
 // Đặt kích thước phông chữ thành 2rem
