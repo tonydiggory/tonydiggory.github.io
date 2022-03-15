@@ -1,7 +1,7 @@
 
 // Truy cập 
 let btnSub = document.querySelector(".btn-sub");
-let imageEl = document.querySelector(".image img");
+let imageEl = document.querySelector(".image");
 let selectEl = document.getElementById("list");
 let subList = document.querySelector(".sub-list");
 
@@ -32,7 +32,7 @@ async function getApiSub (idx) {
         res = await axios.get(`https://dog.ceo/api/breed/${value}/${tmp}/images/random`);
 
         // Hiển thị ảnh
-        imageEl.src = res.data.message;
+        imageEl.innerHTML = `<img src="${res.data.message}" alt=""></img>`
     }catch(err){
         console.log(err);
     }
@@ -41,7 +41,7 @@ async function getApiSub (idx) {
 btnSub.addEventListener("click", async function(){
     try {
         subList.innerHTML = "";
-        imageEl.src = "";
+        imageEl.innerHTML = "";
 
         // Lấy ra nội dung trong ô select
 
