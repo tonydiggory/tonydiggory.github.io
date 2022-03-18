@@ -27,6 +27,7 @@ function renderTime(){
     if(maxTime == -1){
         clearInterval(timeInterval);
         alert(`Điểm của bạn là ${score}`);
+        resultEl.disabled = true;
     }
     maxTime --;
 }
