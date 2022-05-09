@@ -1,0 +1,68 @@
+.section{
+    width: 100%;
+    min-height: calc(100vh - 306px);
+    margin-bottom: 70px;
+}
+
+.section-content{
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 107px;
+}
+
+.h2-logo{
+    font-family: Sedgwick;
+    font-weight: 400;
+}
+
+.section-guide-text{
+    margin-top: 24px;
+}
+
+.section-guide-text p{
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.section-guide-note{
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.section-guide-note p{
+    margin-bottom: 12px;
+}
+
+.section-about{
+    margin-top: 60px;
+}
+
+.section-about h2{
+    margin-bottom: 24px;
+}
+
+@media(max-width: 700px){
+    .section-content{
+        margin-top: 102px;
+    }
+    .section-guide-text{
+        margin-top: 20px;
+    }
+    .section-guide-text p{
+        margin-bottom: 12px;
+    }
+    .section-guide-note{
+        margin-top: 18px;
+        margin-left: 0px;
+    }
+    .section-guide h2{
+        text-align: center;
+    }
+    #note{
+        text-align: center;
+    }
+    .section-about h2{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

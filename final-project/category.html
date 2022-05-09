@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ng.ThCo | The Retailer</title>
+
+    <script>
+      // function selectCat(id){
+      //   let webUrl = window.location.href;
+      //   if(webUrl.includes("brand-filter")){
+      //     if(webUrl.includes("cat-filter")){
+      //       tmp = webUrl.split("?");
+      //       tmp2 = tmp[1].split("&");
+      //       tmp2[0] = `category=${id}`;
+      //       webUrl = tmp[0] + '?' + tmp2[0] + '&' + tmp2[1];
+      //     }else{
+      //       tmp = webUrl.split("?");
+      //       webUrl = tmp[0] + "?" + `category=${id}` + '&' + tmp[1];
+      //     }
+      //   }else{
+      //     if(webUrl.includes("cat-filter")){
+      //       webUrl = webUrl.split("?")[0];
+      //     }
+      //     webUrl += "?";
+      //     webUrl += `category=${id}`;
+      //   }
+      //   window.location.replace(webUrl);
+      // }
+
+      function selectCat(id){
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set('category', id);
+        window.location.search = urlParams;
+      }
+
+      function selectBrand(id){
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set('brand', id);
+        window.location.search = urlParams;
+      }
+
+      function selectSort(id){
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set('sort', id);
+        window.location.search = urlParams;
+      }
+
+      function itemID(id){
+        let url = window.location.href;
+        let newUrl = url.split("?")[1]
+        if (newUrl != null){
+          newUrl = "/detail.html?" + newUrl + "&" + `item=${id}`
+        }else{
+          newUrl = "/detail.html?" + `item=${id}`
+        }
+        window.location.replace(newUrl);
+      }
+
+    </script>
+  </head>
+  <body>
+    <header class="header">
+        <div class="header-content">
+          <div class="header-menu header-menu-1">
+            <div class="header-menu-item header-menu-1-item header-menu-1-item-1">
+              <a href="/category.html?gender=Men" class="text-bold-desktop">MEN</a>
+            </div>
+            <div class="header-menu-item header-menu-1-item header-menu-1-item-2">
+              <a href="/category.html?gender=Women" class="text-bold-desktop">WOMEN</a>
+            </div>
+            <div class="header-menu-item header-menu-1-item header-menu-1-item-3">
+              <a href="/category.html" class="text-bold-desktop">CATEGORY</a>
+              <div class="header-menu-sub">
+                <div class="header-menu-sub-item header-menu-sub-item-1">
+                  <a href="/category.html?category=cat-filter-1" class="text-bold-desktop">CLOTHING</a>
+                </div>
+                <div class="header-menu-sub-item header-menu-sub-item-2">
+                  <a href="/category.html?category=cat-filter-2" class="text-bold-desktop">SHOES</a>
+                </div>
+                <div class="header-menu-sub-item header-menu-sub-item-3">
+                  <a href="/category.html?category=cat-filter-3" class="text-bold-desktop">ACCESSORIES</a>
+                </div>
+                <div class="header-menu-sub-item header-menu-sub-item-4">
+                  <a href="/category.html?category=cat-filter-4" class="text-bold-desktop">JEWELRY</a>
+                </div>
+                <div class="header-menu-sub-item header-menu-sub-item-5">
+                  <a href="/category.html" class="text-bold-desktop">BY BRAND</a>
+                  <img src="./img/icon/chevron-right.svg" alt="right">
+                  <div class="header-menu-sub-2">
+                    <div class="header-menu-sub-2-item header-menu-sub-2-item-1">
+                      <a href="/category.html?brand=brand-filter-1" class="text-bold-desktop">A Bathing APE</a>
+                    </div>
+                    <div class="header-menu-sub-2-item header-menu-sub-2-item-2">
+                      <a href="category.html?brand=brand-filter-3" class="text-bold-desktop">Fear of God</a>
+                    </div>
+                    <div class="header-menu-sub-2-item header-menu-sub-2-item-3">
+                      <a href="category.html?brand=brand-filter-2" class="text-bold-desktop">Ambush</a>
+                    </div>
+                    <div class="header-menu-sub-2-item header-menu-sub-2-item-4">
+                      <a href="category.html?brand=brand-filter-4" class="text-bold-desktop">NIKE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-menu-item header-menu-1-list">
+              <img src="./img/icon/list.svg" alt="list">
+            </div>
+          </div>
+  
+          <div class="header-menu header-menu-2">
+            <div class="header-menu-item header-menu-2-item">
+              <a href="/" class="logo-med">Ng.ThCo | The Retailer</a>
+            </div>
+          </div>
+  
+          <div class="header-menu header-menu-3">
+            <div class="header-menu-item header-menu-3-item header-menu-3-item-1">
+              <a href="/" class="text-bold-desktop">ABOUT US</a>
+            </div>
+            <div class="header-menu-item header-menu-3-item header-menu-3-item-2">
+              <a href="/" class="text-bold-desktop">GUIDE</a>
+            </div>
+            <div class="header-menu-item header-menu-3-item header-menu-3-item-3 header-menu-3-cart">
+              <a href="/" class="text-bold-desktop">CART</a>
+              <img src="./img/icon/Handbag.svg" alt="Handbag">
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <section class="section section-1">
+        <div class="section-content">
+            <div class="category-filter">
+                <div class="category-filter-header">
+                    <h3 class="category-text-desktop">Filter</h3>
+                </div>
+                <div class="category-filter-item category-filter-item-1">
+                    <button class="category-filter-item-name category-filter-item-1-name">
+                        <h3 class ="category-text-desktop">
+                            Category
+                        </h3>
+                        <img src="./img/icon/downarr.svg" alt="arr">
+                    </button>
+                    <div class="category-filter-item-list category-filter-item-1-list">
+                        <div class="category-filter-item-list-ele category-filter-item-1-list-ele-1">
+                          <p class="category-sub-text-desktop" id="cat-filter-1" onclick="selectCat('cat-filter-1')">Clothing</p>
+                        </div>
+
+                        <div class="category-filter-item-list-ele category-filter-item-1-list-ele-2">
+                          <p class="category-sub-text-desktop" id="cat-filter-2" onclick="selectCat('cat-filter-2')">Shoes</p>
+                        </div>
+
+                        <div class="category-filter-item-list-ele category-filter-item-1-list-ele-3">
+                          <p class="category-sub-text-desktop" id="cat-filter-3" onclick="selectCat('cat-filter-3')">Accessories</p>
+                        </div>
+
+                        <div class="category-filter-item-list-ele category-filter-item-1-list-ele-4">
+                          <p class="category-sub-text-desktop" id="cat-filter-4" onclick="selectCat('cat-filter-4')">Jewelry</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-filter-item category-filter-item-2">
+                  <button class="category-filter-item-name category-filter-item-2-name">
+                      <h3 class ="category-text-desktop">
+                          Brand
+                      </h3>
+                      <img src="./img/icon/downarr.svg" alt="arr">
+                  </button>
+                  <div class="category-filter-item-list category-filter-item-2-list">
+                      <div class="category-filter-item-list-ele category-filter-item-2-list-ele-1">
+                        <p id = "brand-filter-1" class="category-sub-text-desktop" onclick="selectBrand('brand-filter-1')">A Bathing Ape</p>
+                      </div>
+                      <div class="category-filter-item-list-ele category-filter-item-2-list-ele-2">
+                        <p id ="brand-filter-2" class="category-sub-text-desktop" onclick="selectBrand('brand-filter-2')">Ambush</p>
+                      </div>
+                      <div class="category-filter-item-list-ele category-filter-item-2-list-ele-3">
+                        <p id = "brand-filter-3" class="category-sub-text-desktop" onclick="selectBrand('brand-filter-3')">Fear of God</p>
+                      </div>
+                      <div class="category-filter-item-list-ele category-filter-item-2-list-ele-4">
+                        <p id="brand-filter-4" class="category-sub-text-desktop" onclick="selectBrand('brand-filter-4')">NIKE</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="category-clear-filter">
+                <a href="./category.html" class="category-sub-text-desktop">Clear Filter</a>
+              </div>
+            </div>
+
+            <div class="category-product">
+              <div class="category-product-header">
+                <div class="category-product-header-breadcrumb">
+                  <div class="category-product-header-breadcrumb-gender">
+                    <p class="text-bold-desktop">All Genders</p>
+                  </div>
+
+                  <div class="category-product-header-breadcrumb-sep">
+                    <img src="./img/icon/seperator.svg" alt="sep">
+                  </div>
+
+                  <div class="category-product-header-breadcrumb-filter">
+                    <p class="text-bold-desktop">All Categories</p>
+                  </div>
+
+                  <div class="category-product-header-breadcrumb-sep">
+                    <img src="./img/icon/seperator.svg" alt="sep">
+                  </div>
+
+                  <div class="category-product-header-breadcrumb-brand">
+                    <p class="text-bold-desktop">All Brands</p>
+                  </div>
+                </div>
+
+                <button class="category-product-header-filter">
+                  <img src="./img/icon/filter.svg" alt="filter">
+                  <p class="text-bold-mobile">Filter</p>
+                </button>
+
+                <div class="category-product-header-sort">
+                  <button class="category-product-header-sort-btn">
+                    <p class ="text-bold-desktop">
+                        Sort by
+                    </p>
+                    <img src="./img/icon/downarr.svg" alt="arr">
+                </button>
+                  <div class="category-product-header-list">
+                    <div class="category-product-header-list-ele category-product-header-list-ele-1">
+                      <p id = "sort-filter-1" class="category-sub-text-desktop" onclick="selectSort('sort-filter-1')">Latest</p>
+                    </div>
+
+                    <div class="category-product-header-list-ele category-product-header-list-ele-2">
+                      <p id = "sort-filter-2" class="category-sub-text-desktop" onclick="selectSort('sort-filter-2')">Oldest</p>
+                    </div>
+
+                    <div class="category-product-header-list-ele category-product-header-list-ele-3 selected-sort">
+                      <p id = "sort-filter-3" class="category-sub-text-desktop" onclick="selectSort('sort-filter-3')">Recommended</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="category-product-contain">
+                <div class="category-product-card category-product-card-1" id="item-1" onclick="itemID('item-1')">
+                  <div class="category-product-card-image-front category-product-card-1-image-front">
+                    <img src="./img/pic/item1/itemFront1.JPG" alt="front">
+                  </div>
+                  <div class="category-product-card-detail category-product-card-1-detail">
+                    <div class="category-product-card-image-back category-product-card-1-image-back">
+                      <img src="./img/pic/item1/itemBack1.JPG" alt="back">
+                    </div>
+                    <div class="category-product-card-text category-product-card-1-text">
+                      <div class="category-product-card-text-1 category-product-card-1-text-1">
+                        <div class="category-product-card-text-tag category-product-card-1-text-tag">
+                          <p class="sub-text-desktop category-product-card-1-text-tag-brand">Fear of God</p>
+                          <p class="sub-text-desktop category-product-card-1-text-tag-gender">MEN</p>
+                        </div>
+                        <div class="category-product-card-text-name category-product-card-1-name">
+                          <p class="text-desktop">ESSENTIALS TEE</p>
+                        </div>
+                      </div>
+                      <div class="category-product-card-text-price category-product-card-1-text-price">
+                        <p class="text-bold-desktop">US$ 45.00</p>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+
+                <div class="category-product-card category-product-card-1">
+                  <div class="category-product-card-image-front category-product-card-1-image-front">
+                    <img src="./img/pic/item1/itemFront1.JPG" alt="front">
+                  </div>
+                  <div class="category-product-card-detail category-product-card-1-detail">
+                    <div class="category-product-card-image-back category-product-card-1-image-back">
+                      <img src="./img/pic/item1/itemBack1.JPG" alt="back">
+                    </div>
+                    <div class="category-product-card-text category-product-card-1-text">
+                      <div class="category-product-card-text-1 category-product-card-1-text-1">
+                        <div class="category-product-card-text-tag category-product-card-1-text-tag">
+                          <p class="sub-text-desktop category-product-card-1-text-tag-brand">Fear of God</p>
+                          <p class="sub-text-desktop category-product-card-1-text-tag-gender">MEN</p>
+                        </div>
+                        <div class="category-product-card-text-name category-product-card-1-name">
+                          <p class="text-desktop">ESSENTIALS TEE</p>
+                        </div>
+                      </div>
+                      <div class="category-product-card-text-price category-product-card-1-text-price">
+                        <p class="text-bold-desktop">US$ 45.00</p>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+
+                <div class="category-product-card category-product-card-1">
+                  <div class="category-product-card-image-front category-product-card-1-image-front">
+                    <img src="./img/pic/item1/itemFront1.JPG" alt="front">
+                  </div>
+                  <div class="category-product-card-detail category-product-card-1-detail">
+                    <div class="category-product-card-image-back category-product-card-1-image-back">
+                      <img src="./img/pic/item1/itemBack1.JPG" alt="back">
+                    </div>
+                    <div class="category-product-card-text category-product-card-1-text">
+                      <div class="category-product-card-text-1 category-product-card-1-text-1">
+                        <div class="category-product-card-text-tag category-product-card-1-text-tag">
+                          <p class="sub-text-desktop category-product-card-1-text-tag-brand">Fear of God</p>
+                          <p class="sub-text-desktop category-product-card-1-text-tag-gender">MEN</p>
+                        </div>
+                        <div class="category-product-card-text-name category-product-card-1-name">
+                          <p class="text-desktop">ESSENTIALS TEE</p>
+                        </div>
+                      </div>
+                      <div class="category-product-card-text-price category-product-card-1-text-price">
+                        <p class="text-bold-desktop">US$ 45.00</p>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+
+                <div class="category-product-card category-product-card-1">
+                  <div class="category-product-card-image-front category-product-card-1-image-front">
+                    <img src="./img/pic/item1/itemFront1.JPG" alt="front">
+                  </div>
+                  <div class="category-product-card-detail category-product-card-1-detail">
+                    <div class="category-product-card-image-back category-product-card-1-image-back">
+                      <img src="./img/pic/item1/itemBack1.JPG" alt="back">
+                    </div>
+                    <div class="category-product-card-text category-product-card-1-text">
+                      <div class="category-product-card-text-1 category-product-card-1-text-1">
+                        <div class="category-product-card-text-tag category-product-card-1-text-tag">
+                          <p class="sub-text-desktop category-product-card-1-text-tag-brand">Fear of God</p>
+                          <p class="sub-text-desktop category-product-card-1-text-tag-gender">MEN</p>
+                        </div>
+                        <div class="category-product-card-text-name category-product-card-1-name">
+                          <p class="text-desktop">ESSENTIALS TEE</p>
+                        </div>
+                      </div>
+                      <div class="category-product-card-text-price category-product-card-1-text-price">
+                        <p class="text-bold-desktop">US$ 45.00</p>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="category-product-navigation">
+                <div class="category-product-navigation-list">
+                  <div class="category-product-navigation-list-item category-product-navigation-list-item-1 category-product-navigation-list-item-selected">
+                  </div>
+
+                  <div class="category-product-navigation-list-item category-product-navigation-list-item-2">
+                  </div>
+
+                  <div class="category-product-navigation-list-item category-product-navigation-list-item-3">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-menu footer-menu-1">
+            <div class="footer-menu-item footer-menu-1-item">
+              <h1 class="logo-large">Ng.ThCo | The Retailer</h1>
+            </div>
+          </div>
+  
+          <div class="footer-menu footer-menu-2">
+            <div class="footer-menu-2-content">
+              <div class="container-fluid px-0">
+                <div class="row m-0">
+                  <div class="col-6 col-md-4 px-lg-3">
+                    <div class="footer-menu-item footer-menu-2-item-1">
+                      <p class="text-bold-desktop footer-menu-header">Explore</p>
+                      <p class="footer-text"><a href="/" class="text-desktop">Men</a></p>
+                      <p class="footer-text"><a href="/" class="text-desktop">Women</a></p>
+                      <p class="footer-text"><a href="/" class="text-desktop">New Arrivals</a></p>
+                    </div>
+                  </div>
+  
+                  <div class="col-6 col-md-4 px-lg-3">
+                    <div class="footer-menu-item footer-menu-2-item-2">
+                      <p class="text-bold-desktop footer-menu-header">Find us on</p>
+                      <div class="footer-menu-2-item-icon footer-text">
+                        <img src="./img/icon/facebook.svg" alt="fb">
+                        <p><a href="/" class="text-desktop">Facebook</a></p>
+                      </div>
+  
+                      <div class="footer-menu-2-item-icon footer-text">
+                        <img src="./img/icon/Instagram.svg" alt="Ins">
+                        <p><a href="/" class="text-desktop">Instagram</a></p>
+                      </div>
+  
+                      <div class="footer-menu-2-item-icon footer-text">
+                        <img src="./img/icon/Twitter.svg" alt="tw">
+                        <p><a href="/" class="text-desktop">Twitter</a></p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-6 col-md-4 px-lg-3 footer-support">
+                    <div class="footer-menu-item footer-menu-2-item-3">
+                      <p class="text-bold-desktop footer-menu-header">Support</p>
+                      <p class="footer-text"><a href="/" class="text-desktop">Guide</a></p>
+                      <p class="footer-text"><a href="/" class="text-desktop">+84 912345678</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="footer-menu footer-menu-3">
+            <p class="text-bold-desktop footer-menu-header">Keep in touch</p>
+            <p class="note-desktop footer-note">By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives.</p>
+            <div class="footer-menu-3-email">
+              <input type="email" placeholder="Email address" id="email-input">
+              <div class="enter-button">
+  
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="module" src="./js/category.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

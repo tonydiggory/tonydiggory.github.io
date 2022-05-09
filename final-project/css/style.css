@@ -1,0 +1,264 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/static/OpenSans/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/static/OpenSans/OpenSans-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/static/OpenSans/OpenSans-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/static/OpenSans/OpenSans-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/static/OpenSans/OpenSans-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/static/OpenSans/OpenSans-SemiBoldItalic.ttf);
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/static/OpenSans/OpenSans-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Sedgwick;
+  src: url(../fonts/SedgwickAve-Regular.ttf);
+  font-weight: 400;
+}
+
+body{
+  min-width: 400px;
+}
+
+.logo-large{
+  font-family: Sedgwick;
+  font-size: 36px;
+  line-height: 44px;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-med-mobile{
+  font-family: Sedgwick;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-med{
+  font-family: Sedgwick;
+  font-size: 28px;
+  line-height: 38px;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-text-desktop{
+  font-family: Sedgwick;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.h1-desktop{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  padding: 0;
+  margin: 0;
+}
+
+.h2-desktop{
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  padding: 0;
+  margin: 0;
+}
+
+.h3-desktop{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+.text-desktop{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.text-bold-desktop{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.note-desktop{
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.category-text-desktop{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.category-sub-text-desktop{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.category-sub-text-mobile{
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.button-text-desktop{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.button-text-mobile{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-text-desktop{
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.text-bold-mobile{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.text-bolder-mobile{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.h1-mobile{
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  padding: 0;
+  margin: 0;
+}
+
+.h2-mobile{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+.h3-mobile{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.text-mobile{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-text-mobile{
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: OpenSans;
+  color: #343434;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+a{
+  color: #343434;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #343434;
+}
