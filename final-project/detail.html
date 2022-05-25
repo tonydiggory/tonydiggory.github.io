@@ -2,12 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <!-- link favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icon/favicon-16x16.png">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ng.ThCo | The Retailer</title>
+    <title>Ng.ThCo | The Retailer - Product</title>
   </head>
   <body>
     <header class="header">
+      <div class="header-content-mobile">
+        <div class="header-content-mobile-header">
+          <div class="header-content-mobile-header-icon">
+            <img src="./img/icon/list.svg" alt="list">
+          </div>
+
+          <div class="header-content-mobile-header-logo">
+            <a href="/index.html" class="logo-med">Ng.ThCo | The Retailer</a>
+          </div>
+
+          <div class="header-content-mobile-header-close">
+            <img src="./img/icon/close.svg" alt="X">
+          </div>
+        </div>
+
+        <div class="header-content-mobile-list">
+          <div class="header-content-mobile-list-item header-content-mobile-list-item-1">
+            <a href="/index.html" class="text-bold-desktop">Home</a>
+          </div>
+
+          <div class="header-content-mobile-list-item header-content-mobile-list-item-2">
+            <a href="/category.html?gender=Men" class="text-bold-desktop">Men</a>
+          </div>
+
+          <div class="header-content-mobile-list-item header-content-mobile-list-item-3">
+            <a href="/category.html?gender=Women" class="text-bold-desktop">Women</a>
+          </div>
+
+          <div class="header-content-mobile-list-item header-content-mobile-list-item-4">
+            <a href="/category.html" class="text-bold-desktop">Category</a>
+          </div>
+          <div class="header-content-mobile-list-sub">
+            <div class="header-content-mobile-list-sub-item header-content-mobile-list-sub-item-1">
+              <p class="text-bold-desktop">+ &ensp;<a href="/category.html?category=cat-filter-1" class="text-bold-desktop">Clothing</a></p>
+            </div>
+
+            <div class="header-content-mobile-list-sub-item header-content-mobile-list-sub-item-2">
+              <p class="text-bold-desktop">+ &ensp;<a href="/category.html?category=cat-filter-2" class="text-bold-desktop">Shoes</a></p>
+            </div>
+
+            <div class="header-content-mobile-list-sub-item header-content-mobile-list-sub-item-3">
+              <p class="text-bold-desktop">+ &ensp;<a href="/category.html?category=cat-filter-3" class="text-bold-desktop">Accessories</a></p>
+            </div>
+
+            <div class="header-content-mobile-list-sub-item header-content-mobile-list-sub-item-4">
+              <p class="text-bold-desktop">+ &ensp;<a href="/category.html?category=cat-filter-4" class="text-bold-desktop">Jewelry</a></p>
+            </div>
+          </div>
+
+          <div class="header-content-mobile-list-item header-content-mobile-list-item-5">
+            <a href="/guide.html" class="text-bold-desktop">Guide</a>
+          </div>
+        </div>
+      </div>
       <div class="header-content">
         <div class="header-menu header-menu-1">
           <div class="header-menu-item header-menu-1-item header-menu-1-item-1">
@@ -58,25 +114,27 @@
 
         <div class="header-menu header-menu-2">
           <div class="header-menu-item header-menu-2-item">
-            <a href="/" class="logo-med">Ng.ThCo | The Retailer</a>
+            <a href="/index.html" class="logo-med">Ng.ThCo | The Retailer</a>
           </div>
         </div>
 
         <div class="header-menu header-menu-3">
           <div class="header-menu-item header-menu-3-item header-menu-3-item-1">
-            <a href="/" class="text-bold-desktop">ABOUT US</a>
+            <a href="/guide.html#guide-about" class="text-bold-desktop">ABOUT US</a>
           </div>
           <div class="header-menu-item header-menu-3-item header-menu-3-item-2">
-            <a href="/" class="text-bold-desktop">GUIDE</a>
+            <a href="/guide.html" class="text-bold-desktop">GUIDE</a>
           </div>
           <div class="header-menu-item header-menu-3-item header-menu-3-item-3 header-menu-3-cart">
-            <a href="/" class="text-bold-desktop">CART</a>
+            <a href="/cart.html" class="text-bold-desktop">CART</a>
             <img src="./img/icon/Handbag.svg" alt="Handbag">
           </div>
         </div>
       </div>
   </header>
 
+  <div id="loading">Loading, please wait...</div>
+  
   <section class="section section-1">
     <div class="section-content">
       <div class="section-banner">
@@ -98,7 +156,7 @@
           </div>
 
           <div class="section-banner-breadcrumb-brand">
-            <p class="text-bold-mobile">A Bathing Ape</p>
+            <p class="text-bold-mobile">Fear of God</p>
           </div>
 
           <div class="section-banner-breadcrumb-sep">
@@ -111,10 +169,10 @@
         </div> 
         <div class="section-banner-bg">
           <div class="section-banner-bg-image section-banner-bg-image-front">
-            <img src="./img/pic/item1/itemFront1.JPG" alt="front">
+            <img src="./img/pic/item10/itemFront.png" alt="front">
           </div>
           <div class="section-banner-bg-image section-banner-bg-image-back">
-            <img src="./img/pic/item1/itemBack1.JPG" alt="back">
+            <img src="./img/pic/item10/itemBack.png" alt="back">
           </div>
         </div>
         <div class="section-banner-imgnav">
@@ -130,7 +188,7 @@
             <div class="section-banner-detail-info">
               <div class="section-banner-detail-info-text">
                 <p class="sub-text-desktop detail-brand">Fear of God</p>
-                <p class="text-desktop">Essentials Tees</p>
+                <p class="text-desktop detail-name">Essentials Tees</p>
               </div>
   
               <div class="section-banner-detail-info-price">
@@ -238,9 +296,9 @@
               <div class="col-6 col-md-4 px-lg-3">
                 <div class="footer-menu-item footer-menu-2-item-1">
                   <p class="text-bold-desktop footer-menu-header">Explore</p>
-                  <p class="footer-text"><a href="/" class="text-desktop">Men</a></p>
-                  <p class="footer-text"><a href="/" class="text-desktop">Women</a></p>
-                  <p class="footer-text"><a href="/" class="text-desktop">New Arrivals</a></p>
+                  <p class="footer-text"><a href="/category.html?gender=Men" class="text-desktop">Men</a></p>
+                  <p class="footer-text"><a href="/category.html?gender=Women" class="text-desktop">Women</a></p>
+                  <p class="footer-text"><a href="/category.html?sort=sort-filter-1" class="text-desktop">New Arrivals</a></p>
                 </div>
               </div>
 
@@ -249,17 +307,17 @@
                   <p class="text-bold-desktop footer-menu-header">Find us on</p>
                   <div class="footer-menu-2-item-icon footer-text">
                     <img src="./img/icon/facebook.svg" alt="fb">
-                    <p><a href="/" class="text-desktop">Facebook</a></p>
+                    <p><a href="https://www.facebook.com/co.nguyenthien.39/" target="_blank" class="text-desktop">Facebook</a></p>
                   </div>
 
                   <div class="footer-menu-2-item-icon footer-text">
                     <img src="./img/icon/Instagram.svg" alt="Ins">
-                    <p><a href="/" class="text-desktop">Instagram</a></p>
+                    <p><a href="https://instagram.com/metho.tic?igshid=YmMyMTA2M2Y" target="_blank" class="text-desktop">Instagram</a></p>
                   </div>
 
                   <div class="footer-menu-2-item-icon footer-text">
                     <img src="./img/icon/Twitter.svg" alt="tw">
-                    <p><a href="/" class="text-desktop">Twitter</a></p>
+                    <p><a href="https://twitter.com/?lang=en" target="_blank" class="text-desktop">Twitter</a></p>
                   </div>
                 </div>
               </div>
@@ -267,8 +325,8 @@
               <div class="col-6 col-md-4 px-lg-3 footer-support">
                 <div class="footer-menu-item footer-menu-2-item-3">
                   <p class="text-bold-desktop footer-menu-header">Support</p>
-                  <p class="footer-text"><a href="/" class="text-desktop">Guide</a></p>
-                  <p class="footer-text"><a href="/" class="text-desktop">+84 912345678</a></p>
+                  <p class="footer-text"><a href="/guide.html" class="text-desktop">Guide</a></p>
+                  <p class="footer-text"><a href="tel:+84912345678" class="text-desktop">+84 912345678</a></p>
                 </div>
               </div>
             </div>

@@ -2,9 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- link favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icon/favicon-16x16.png">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Ng.ThCo | The Retailer</title>
+
+    <script>
+      function itemID(id){
+      let url = window.location.href;
+      let newUrl = url.split("?")[1]
+      if (newUrl != null){
+        newUrl = "/detail.html?" + newUrl + "&" + `item=${id}`
+      }else{
+        newUrl = "/detail.html?" + `item=${id}`
+      }
+      window.location.href = newUrl;
+      // window.location.replace(newUrl);
+    }
+    </script>
   </head>
   <body>
     <header class="header">
@@ -112,19 +130,19 @@
 
         <div class="header-menu header-menu-2">
           <div class="header-menu-item header-menu-2-item">
-            <a href="/" class="logo-med">Ng.ThCo | The Retailer</a>
+            <a href="/index.html" class="logo-med">Ng.ThCo | The Retailer</a>
           </div>
         </div>
 
         <div class="header-menu header-menu-3">
           <div class="header-menu-item header-menu-3-item header-menu-3-item-1">
-            <a href="/" class="text-bold-desktop">ABOUT US</a>
+            <a href="/guide.html#guide-about" class="text-bold-desktop">ABOUT US</a>
           </div>
           <div class="header-menu-item header-menu-3-item header-menu-3-item-2">
             <a href="/guide.html" class="text-bold-desktop">GUIDE</a>
           </div>
           <div class="header-menu-item header-menu-3-item header-menu-3-item-3 header-menu-3-cart">
-            <a href="/" class="text-bold-desktop">CART</a>
+            <a href="/cart.html" class="text-bold-desktop">CART</a>
             <img src="./img/icon/Handbag.svg" alt="Handbag">
           </div>
         </div>
@@ -134,7 +152,7 @@
     <section class="section-1">
       <div class="section-content section-1-content">
         <div class="section-1-header">
-          <h3><a href="/" class="h3-desktop">A Bathing APE</a></h3>
+          <h3><a href="/category.html?brand=brand-filter-1" class="h3-desktop">A Bathing APE</a></h3>
         </div>
 
         <div class="section-1-banner">
@@ -156,6 +174,9 @@
                 <div class="section-1-arr section-1-leftarr">
                   <img src="./img/icon/leftarr.svg" alt="arr">
                 </div>
+                <div class="section-1-banner-image-click">
+
+                </div>
                 <div class="section-1-arr section-1-rightarr">
                   <img src="./img/icon/rightarr.svg" alt="arr">
                 </div>
@@ -170,14 +191,12 @@
               BAPE STA™ 93 HI
             </h2>
             <div class="section-1-banner-text-description">
-              <p class="text-desktop">&ensp;BAPE STA ™ always offers more footwear than you can imagine. While expressing the mood of each season, we provide a design with the comfort and practicality required for shoes. Spring is a vibrant season, and this latest collection features seasonal coloring.</p>
-            <p class="text-desktop section-1-text-2"><br>&ensp;The BAPE STA ™ 93 HI to be released this time is composed of a calm earth color inspired by the soft scenery of spring.<br><br>&ensp;Invite you to hike at night in the open and quiet nature of spring.</p>
+              <p class="text-desktop">BAPE STA ™ always offers more footwear than you can imagine. While expressing the mood of each season, we provide a design with the comfort and practicality required for shoes. Spring is a vibrant season, and this latest collection features seasonal coloring.</p>
+            <p class="text-desktop section-1-text-2"><br>The BAPE STA ™ 93 HI to be released this time is composed of a calm earth color inspired by the soft scenery of spring.<br><br>Invite you to hike at night in the open and quiet nature of spring.</p>
             </div>
             <button class="see-more-btn section-1-see-more-btn">
               <p class="button-text-desktop">SEE MORE</p>
             </button>
-            <p class="section-1-see-more-link"><a href="/" class="text-bold-desktop">See More</a></p>
-
           </div>
         </div>
       </div>
@@ -186,136 +205,214 @@
     <section class="section section-2">
       <div class="section-content">
         <div class="section-header section-2-header">
-          <h3><a href="/" class="h3-desktop">Ambush</a></h3>
+          <h3><a href="/category.html?brand=brand-filter-2" class="h3-desktop">Ambush</a></h3>
         </div>
 
         <div class="section-2-contain">
-          <div class="section-2-card section-2-card-1">
+          <div class="section-2-card section-2-card-1" onclick="itemID('item13')">
             <div class="section-2-card-image section-2-card-1-image">
               <div class="section-2-card-image-overlay section-2-card-1-image-overlay">
-                <img src="./img/pic/bapeitem1.2.png" alt="capback">
+                <img src="./img/pic/item13/itemBack.png" alt="back">
                 <div class="section-2-card-image-overlay-background">
                 </div>
-                <button class="add-cart-btn"><p class="button-text-desktop">VIEW DETAILS</p></button>
+                <button class="add-cart-btn" onclick="itemID('item13')"><p class="button-text-desktop">VIEW DETAILS</p></button>
               </div>
-              <img src="./img/pic/bapeitem1.png" alt="cap">
+              <img src="./img/pic/item13/itemFrontHome.png" alt="front">
             </div>
 
             <div class="section-2-card-text section-2-card-1-text">
               <div class="section-2-card-text-name section-2-card-1-text-name">
                 <div class="section-2-card-text-name-tag section-2-card-1-text-name-tag">
-                  <p class="card-home-tag-brand-1 sub-text-desktop">A BATHING APE®</p>
-                <p class="card-home-tag-sort-1 sub-text-desktop">MEN</p>
+                  <p class="card-home-tag-brand-1 sub-text-desktop">Ambush</p>
+                <p class="card-home-tag-sort-1 sub-text-desktop">WOMEN</p>
                 </div>
-                <p class="card-home-name-1 text-desktop">X Stussy Trucker Cap</p>
+                <p class="card-home-name-1 text-desktop">Heart Link Ring</p>
               </div>
 
               <div class="section-2-card-text-price">
-                <p class="card-home-price-1 text-bold-desktop">US$137.00</p>
+                <p class="card-home-price-1 text-bold-desktop">US$597.00</p>
               </div>
             </div>
           </div>
 
-          <div class="section-2-card section-2-card-2">
+          <div class="section-2-card section-2-card-2" onclick="itemID('item15')">
             <div class="section-2-card-image section-2-card-2-image">
               <div class="section-2-card-image-overlay section-2-card-2-image-overlay">
-                <img src="./img/pic/bapeitem1.2.png" alt="capback">
+                <img src="./img/pic/item15/itemBack.png" alt="back">
                 <div class="section-2-card-image-overlay-background">
                 </div>
-                <button class="add-cart-btn"><p class="button-text-desktop">VIEW DETAILS</p></button>
+                <button class="add-cart-btn" onclick="itemID('item15')"><p class="button-text-desktop">VIEW DETAILS</p></button>
               </div>
-              <img src="./img/pic/bapeitem1.png" alt="cap">
+              <img src="./img/pic/item15/itemFrontHome.png" alt="front">
             </div>
 
             <div class="section-2-card-text section-2-card-2-text">
               <div class="section-2-card-text-name section-2-card-2-text-name">
                 <div class="section-2-card-text-name-tag section-2-card-2-text-name-tag">
-                  <p class="card-home-tag-brand-2 sub-text-desktop">A BATHING APE®</p>
-                <p class="card-home-tag-sort-2 sub-text-desktop">MEN</p>
+                  <p class="card-home-tag-brand-2 sub-text-desktop">Ambush</p>
+                <p class="card-home-tag-sort-2 sub-text-desktop">WOMEN</p>
                 </div>
-                <p class="card-home-name-2 text-desktop">X Stussy Trucker Cap</p>
+                <p class="card-home-name-2 text-desktop">MisFit Ring</p>
               </div>
 
               <div class="section-2-card-text-price">
-                <p class="card-home-price-2 text-bold-desktop">US$137.00</p>
+                <p class="card-home-price-2 text-bold-desktop">US$454.00</p>
               </div>
             </div>
           </div>
 
-          <div class="section-2-card section-2-card-3">
+          <div class="section-2-card section-2-card-3" onclick="itemID('item10')">
             <div class="section-2-card-image section-2-card-3-image">
               <div class="section-2-card-image-overlay section-2-card-3-image-overlay">
-                <img src="./img/pic/bapeitem1.2.png" alt="capback">
+                <img src="./img/pic/item10/itemBack.png" alt="back">
                 <div class="section-2-card-image-overlay-background">
                 </div>
-                <button class="add-cart-btn"><p class="button-text-desktop">VIEW DETAILS</p></button>
+                <button class="add-cart-btn" onclick="itemID('item10')"><p class="button-text-desktop">VIEW DETAILS</p></button>
               </div>
-              <img src="./img/pic/bapeitem1.png" alt="cap">
+              <img src="./img/pic/item10/itemFrontHome.png" alt="front">
             </div>
 
             <div class="section-2-card-text section-2-card-3-text">
               <div class="section-2-card-text-name section-2-card-3-text-name">
                 <div class="section-2-card-text-name-tag section-2-card-3-text-name-tag">
-                  <p class="card-home-tag-brand-3 sub-text-desktop">A BATHING APE®</p>
-                <p class="card-home-tag-sort-3 sub-text-desktop">MEN</p>
+                  <p class="card-home-tag-brand-3 sub-text-desktop">Ambush</p>
+                <p class="card-home-tag-sort-3 sub-text-desktop">WOMEN</p>
                 </div>
-                <p class="card-home-name-3 text-desktop">X Stussy Trucker Cap</p>
+                <p class="card-home-name-3 text-desktop">Lighter Case Necklace</p>
               </div>
 
               <div class="section-2-card-text-price">
-                <p class="card-home-price-3 text-bold-desktop">US$137.00</p>
+                <p class="card-home-price-3 text-bold-desktop">US$207.00</p>
               </div>
             </div>
           </div>
 
-          <div class="section-2-card section-2-card-4">
+          <div class="section-2-card section-2-card-4" onclick="itemID('item16')">
             <div class="section-2-card-image section-2-card-4-image">
               <div class="section-2-card-image-overlay section-2-card-4-image-overlay">
-                <img src="./img/pic/bapeitem1.2.png" alt="capback">
+                <img src="./img/pic/item16/itemBack.png" alt="back">
                 <div class="section-2-card-image-overlay-background">
                 </div>
-                <button class="add-cart-btn"><p class="button-text-desktop">VIEW DETAILS</p></button>
+                <button class="add-cart-btn" onclick="itemID('item16')"><p class="button-text-desktop">VIEW DETAILS</p></button>
               </div>
-              <img src="./img/pic/bapeitem1.png" alt="cap">
+              <img src="./img/pic/item16/itemFrontHome.png" alt="front">
             </div>
 
             <div class="section-2-card-text section-2-card-4-text">
               <div class="section-2-card-text-name section-2-card-4-text-name">
                 <div class="section-2-card-text-name-tag section-2-card-4-text-name-tag">
-                  <p class="card-home-tag-brand-4 sub-text-desktop">A BATHING APE®</p>
-                <p class="card-home-tag-sort-4 sub-text-desktop">MEN</p>
+                  <p class="card-home-tag-brand-4 sub-text-desktop">Ambush</p>
+                <p class="card-home-tag-sort-4 sub-text-desktop">WOMEN</p>
                 </div>
-                <p class="card-home-name-4 text-desktop">X Stussy Trucker Cap</p>
+                <p class="card-home-name-4 text-desktop">FlyCharm Necklace</p>
               </div>
 
               <div class="section-2-card-text-price">
-                <p class="card-home-price-4 text-bold-desktop">US$137.00</p>
+                <p class="card-home-price-4 text-bold-desktop">US$413.00</p>
               </div>
             </div>
           </div>
 
-          <div class="section-2-card section-2-card-5">
+          <div class="section-2-card section-2-card-5" onclick="itemID('item14')">
             <div class="section-2-card-image section-2-card-5-image">
               <div class="section-2-card-image-overlay section-2-card-5-image-overlay">
-                <img src="./img/pic/bapeitem1.2.png" alt="capback">
+                <img src="./img/pic/item14/itemBack.png" alt="back">
                 <div class="section-2-card-image-overlay-background">
                 </div>
-                <button class="add-cart-btn"><p class="button-text-desktop">VIEW DETAILS</p></button>
+                <button class="add-cart-btn" onclick="itemID('item14')"><p class="button-text-desktop">VIEW DETAILS</p></button>
               </div>
-              <img src="./img/pic/bapeitem1.png" alt="cap">
+              <img src="./img/pic/item14/itemFrontHome.png" alt="front">
             </div>
 
             <div class="section-2-card-text section-2-card-5-text">
               <div class="section-2-card-text-name section-2-card-5-text-name">
                 <div class="section-2-card-text-name-tag section-2-card-5-text-name-tag">
-                  <p class="card-home-tag-brand-5 sub-text-desktop">A BATHING APE®</p>
-                <p class="card-home-tag-sort-5 sub-text-desktop">MEN</p>
+                  <p class="card-home-tag-brand-5 sub-text-desktop">Ambush</p>
+                <p class="card-home-tag-sort-5 sub-text-desktop">WOMEN</p>
                 </div>
-                <p class="card-home-name-5 text-desktop">X Stussy Trucker Cap</p>
+                <p class="card-home-name-5 text-desktop">FlyCharm Ring</p>
               </div>
 
               <div class="section-2-card-text-price">
-                <p class="card-home-price-5 text-bold-desktop">US$137.00</p>
+                <p class="card-home-price-5 text-bold-desktop">US$413.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-2-card section-2-card-6" onclick="itemID('item11')">
+            <div class="section-2-card-image section-2-card-6-image">
+              <div class="section-2-card-image-overlay section-2-card-6-image-overlay">
+                <img src="./img/pic/item11/itemBack.png" alt="back">
+                <div class="section-2-card-image-overlay-background">
+                </div>
+                <button class="add-cart-btn" onclick="itemID('item11')"><p class="button-text-desktop">VIEW DETAILS</p></button>
+              </div>
+              <img src="./img/pic/item11/itemFrontHome.png" alt="front">
+            </div>
+
+            <div class="section-2-card-text section-2-card-6-text">
+              <div class="section-2-card-text-name section-2-card-6-text-name">
+                <div class="section-2-card-text-name-tag section-2-card-6-text-name-tag">
+                  <p class="card-home-tag-brand-6 sub-text-desktop">Ambush</p>
+                <p class="card-home-tag-sort-6 sub-text-desktop">WOMEN</p>
+                </div>
+                <p class="card-home-name-6 text-desktop">PillCharm Necklace</p>
+              </div>
+
+              <div class="section-2-card-text-price">
+                <p class="card-home-price-6 text-bold-desktop">US$312.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-2-card section-2-card-7" onclick="itemID('item12')">
+            <div class="section-2-card-image section-2-card-7-image">
+              <div class="section-2-card-image-overlay section-2-card-7-image-overlay">
+                <img src="./img/pic/item12/itemBack.png" alt="back">
+                <div class="section-2-card-image-overlay-background">
+                </div>
+                <button class="add-cart-btn" onclick="itemID('item12')"><p class="button-text-desktop">VIEW DETAILS</p></button>
+              </div>
+              <img src="./img/pic/item12/itemFrontHome.png" alt="front">
+            </div>
+
+            <div class="section-2-card-text section-2-card-7-text">
+              <div class="section-2-card-text-name section-2-card-7-text-name">
+                <div class="section-2-card-text-name-tag section-2-card-7-text-name-tag">
+                  <p class="card-home-tag-brand-7 sub-text-desktop">Ambush</p>
+                <p class="card-home-tag-sort-7 sub-text-desktop">WOMEN</p>
+                </div>
+                <p class="card-home-name-7 text-desktop">BunnyCharm Necklace</p>
+              </div>
+
+              <div class="section-2-card-text-price">
+                <p class="card-home-price-7 text-bold-desktop">US$376.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-2-card section-2-card-8" onclick="itemID('item17')">
+            <div class="section-2-card-image section-2-card-8-image">
+              <div class="section-2-card-image-overlay section-2-card-8-image-overlay">
+                <img src="./img/pic/item17/itemBack.png" alt="back">
+                <div class="section-2-card-image-overlay-background">
+                </div>
+                <button class="add-cart-btn" onclick="itemID('item17')"><p class="button-text-desktop">VIEW DETAILS</p></button>
+              </div>
+              <img src="./img/pic/item17/itemFrontHome.png" alt="front">
+            </div>
+
+            <div class="section-2-card-text section-2-card-8-text">
+              <div class="section-2-card-text-name section-2-card-8-text-name">
+                <div class="section-2-card-text-name-tag section-2-card-8-text-name-tag">
+                  <p class="card-home-tag-brand-8 sub-text-desktop">Ambush</p>
+                <p class="card-home-tag-sort-8 sub-text-desktop">WOMEN</p>
+                </div>
+                <p class="card-home-name-8 text-desktop">BatteryCharm Necklace</p>
+              </div>
+
+              <div class="section-2-card-text-price">
+                <p class="card-home-price-8 text-bold-desktop">US$450.00</p>
               </div>
             </div>
           </div>
@@ -326,7 +423,7 @@
     <section class="section section-3">
       <div class="section-content">
         <div class="section-header section-3-header">
-          <h3><a href="/" class="h3-desktop">Fear of God</a></h3>
+          <h3><a href="/category.html?brand=brand-filter-3" class="h3-desktop">Fear of God</a></h3>
         </div>
 
         <div class="section-3-fg">
@@ -372,7 +469,7 @@
     <section class="section section-4">
       <div class="section-content">
         <div class="section-header section-4-header">
-          <h3><a href="/" class="h3-desktop">NIKE</a></h3>
+          <h3><a href="/category.html?brand=brand-filter-4" class="h3-desktop">NIKE</a></h3>
         </div>
 
         <div class="section-4-contain">
@@ -395,20 +492,20 @@
     <section class="section section-5">
       <div class="section-content">
         <div class="section-header section-5-header">
-          <h3><a href="/" class="h3-desktop">SHOP BY BRAND</a></h3>
+          <h3><a href="/category.html" class="h3-desktop">SHOP BY BRAND</a></h3>
         </div>
         <div class="section-5-list">
           <div class="section-5-logo section-5-logo-1">
-            <a href="/"><img src="./img/pic/logo1.png" alt="nike"></a>
+            <a href="/category.html?brand=brand-filter-4"><img src="./img/pic/logo1.png" alt="nike"></a>
           </div>
           <div class="section-5-logo section-5-logo-2">
-            <a href="/"><img src="./img/pic/logo2.png" alt="fear"></a>
+            <a href="/category.html?brand=brand-filter-3"><img src="./img/pic/logo2.png" alt="fear"></a>
           </div>
           <div class="section-5-logo section-5-logo-3">
-            <a href="/"><img src="./img/pic/logo3.png" alt="Bape"></a>
+            <a href="/category.html?brand=brand-filter-1"><img src="./img/pic/logo3.png" alt="Bape"></a>
           </div>
           <div class="section-5-logo section-5-logo-4">
-            <a href="/"><img src="./img/pic/logo4.png" alt="ambush"></a>
+            <a href="/category.html?brand=brand-filter-2"><img src="./img/pic/logo4.png" alt="ambush"></a>
           </div>
         </div>
       </div>
@@ -429,9 +526,9 @@
                 <div class="col-6 col-md-4 px-lg-3">
                   <div class="footer-menu-item footer-menu-2-item-1">
                     <p class="text-bold-desktop footer-menu-header">Explore</p>
-                    <p class="footer-text"><a href="/" class="text-desktop">Men</a></p>
-                    <p class="footer-text"><a href="/" class="text-desktop">Women</a></p>
-                    <p class="footer-text"><a href="/" class="text-desktop">New Arrivals</a></p>
+                    <p class="footer-text"><a href="/category.html?gender=Men" class="text-desktop">Men</a></p>
+                    <p class="footer-text"><a href="/category.html?gender=Women" class="text-desktop">Women</a></p>
+                    <p class="footer-text"><a href="/category.html?sort=sort-filter-1" class="text-desktop">New Arrivals</a></p>
                   </div>
                 </div>
 
@@ -440,17 +537,17 @@
                     <p class="text-bold-desktop footer-menu-header">Find us on</p>
                     <div class="footer-menu-2-item-icon footer-text">
                       <img src="./img/icon/facebook.svg" alt="fb">
-                      <p><a href="/" class="text-desktop">Facebook</a></p>
+                      <p><a href="https://www.facebook.com/co.nguyenthien.39/" target="_blank" class="text-desktop">Facebook</a></p>
                     </div>
 
                     <div class="footer-menu-2-item-icon footer-text">
                       <img src="./img/icon/Instagram.svg" alt="Ins">
-                      <p><a href="/" class="text-desktop">Instagram</a></p>
+                      <p><a href="https://instagram.com/metho.tic?igshid=YmMyMTA2M2Y" target="_blank" class="text-desktop">Instagram</a></p>
                     </div>
 
                     <div class="footer-menu-2-item-icon footer-text">
                       <img src="./img/icon/Twitter.svg" alt="tw">
-                      <p><a href="/" class="text-desktop">Twitter</a></p>
+                      <p><a href="https://twitter.com/?lang=en" target="_blank" class="text-desktop">Twitter</a></p>
                     </div>
                   </div>
                 </div>
@@ -458,8 +555,8 @@
                 <div class="col-6 col-md-4 px-lg-3 footer-support">
                   <div class="footer-menu-item footer-menu-2-item-3">
                     <p class="text-bold-desktop footer-menu-header">Support</p>
-                    <p class="footer-text"><a href="/" class="text-desktop">Guide</a></p>
-                    <p class="footer-text"><a href="/" class="text-desktop">+84 912345678</a></p>
+                    <p class="footer-text"><a href="/guide.html" class="text-desktop">Guide</a></p>
+                    <p class="footer-text"><a href="tel:+84912345678" class="text-desktop">+84 912345678</a></p>
                   </div>
                 </div>
               </div>

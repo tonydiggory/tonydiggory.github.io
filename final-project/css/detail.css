@@ -1,6 +1,11 @@
 .section{
     width: 100%;
     background-color: #ffffff;
+    display: none;
+}
+
+#loading{
+    margin-top: 800px;
 }
 
 .section-content{
@@ -283,6 +288,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        cursor: pointer;
     }
     .section-banner-bg-image-back{
         left: 100%;

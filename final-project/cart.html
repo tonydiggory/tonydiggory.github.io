@@ -2,10 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- link favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icon/favicon-16x16.png">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ng.ThCo | The Retailer</title>
+    <title>Ng.ThCo | The Retailer - Cart</title>
   </head>
+
+  <script>
+    let removeID = function(id){
+      let myTO = setTimeout(function(){
+        let dt = JSON.parse($(".data").text());
+        $(".remove-name h3").text(dt[id]['call']);
+        let tmp = localStorage.getItem(`${id}`);
+        $(".remove-quantity span").text(tmp);
+        $(".remove").attr("id", id);
+        $(".remove-bg").show("smooth");
+      }, 300)
+    }
+    let addNum = function(id){
+      
+        let tmp = localStorage.getItem(`${id}`);
+        if(tmp == 10){
+          return;
+        }else{
+          tmp++;
+        }
+        localStorage.removeItem(id);
+        localStorage.setItem(id, tmp);
+      
+    }
+    let subNum = function(id){
+      
+        let tmp = localStorage.getItem(`${id}`);
+        if(tmp == 1){
+          return;
+        }else{
+          tmp--;
+        }
+        localStorage.removeItem(id);
+        localStorage.setItem(id, tmp);
+      
+    }
+  </script>
   <body>
     <header class="header">
       <div class="header-content-mobile">
@@ -58,7 +98,7 @@
           </div>
 
           <div class="header-content-mobile-list-item header-content-mobile-list-item-5">
-            <a href="/" class="text-bold-desktop">Guide</a>
+            <a href="/guide.html" class="text-bold-desktop">Guide</a>
           </div>
         </div>
       </div>
@@ -112,19 +152,19 @@
 
         <div class="header-menu header-menu-2">
           <div class="header-menu-item header-menu-2-item">
-            <a href="/" class="logo-med">Ng.ThCo | The Retailer</a>
+            <a href="/index.html" class="logo-med">Ng.ThCo | The Retailer</a>
           </div>
         </div>
 
         <div class="header-menu header-menu-3">
           <div class="header-menu-item header-menu-3-item header-menu-3-item-1">
-            <a href="/" class="text-bold-desktop">ABOUT US</a>
+            <a href="/guide.html#guide-about" class="text-bold-desktop">ABOUT US</a>
           </div>
           <div class="header-menu-item header-menu-3-item header-menu-3-item-2">
-            <a href="/" class="text-bold-desktop">GUIDE</a>
+            <a href="/guide.html" class="text-bold-desktop">GUIDE</a>
           </div>
           <div class="header-menu-item header-menu-3-item header-menu-3-item-3 header-menu-3-cart">
-            <a href="/" class="text-bold-desktop">CART</a>
+            <a href="/cart.html" class="text-bold-desktop">CART</a>
             <img src="./img/icon/Handbag.svg" alt="Handbag">
           </div>
         </div>
@@ -132,6 +172,30 @@
   </header>
 
     <section class="section section-1">
+      <div class="remove-bg">
+        <div class="data" style="display: none;">
+
+        </div>
+        <div class="remove-overlay">
+
+        </div>
+        <div class="remove-contain">
+          <h2 class="h2-desktop">Are you sure want to remove this item ?</h2>
+          <div class="remove-name">
+            <h3 class="h3-desktop">Essentials Tee</h3>
+          </div>
+          <div class="remove-detail">
+            <p class="text-desktop">Size: M</p>
+            <div class="remove-quantity">
+              <p class="text-desktop">Quantity: <span class="text-desktop">2</span></p>
+            </div>
+          </div>
+          <div class="remove-button">
+            <button class="cancel"><p class="text-desktop">CANCEL</p></button>
+            <button class="remove"><p class="text-desktop">REMOVE</p></button>
+          </div>
+        </div>
+      </div>
         <div class="section-content">
             <div class="section-row section-row-1">
                 <div class="section-col-1 section-address">
@@ -141,7 +205,7 @@
                     <div class="section-address-input">
                         <div class="section-address-input-item section-address-input-name">
                             <div class="section-address-input-name-header">
-                                <p class="text-bold-desktop">Name</p>
+                                <p class="text-bold-desktop">Name*</p>
                             </div>
                             <div class="section-address-input-text section-address-input-name-text">
                                 <input type="text" class="text-desktop" id="name-address" placeholder="E.g: Tom Hanks">
@@ -150,7 +214,7 @@
 
                         <div class="section-address-input-item section-address-input-phone">
                             <div class="section-address-input-phone-header">
-                                <p class="text-bold-desktop">Phone</p>
+                                <p class="text-bold-desktop">Phone*</p>
                             </div>
                             <div class="section-address-input-text section-address-input-phone-text">
                                 <input type="number" class="text-desktop" id="phone-address" placeholder="E.g: 09 12345678">
@@ -159,7 +223,7 @@
 
                         <div class="section-address-input-item section-address-input-email">
                             <div class="section-address-input-email-header">
-                                <p class="text-bold-desktop">Email</p>
+                                <p class="text-bold-desktop">Email*</p>
                             </div>
                             <div class="section-address-input-text section-address-input-email-text">
                                 <input type="email" class="text-desktop" id="email-address" placeholder="E.g: name@gmail.com">
@@ -168,7 +232,7 @@
 
                         <div class="section-address-input-item section-address-input-location">
                             <div class="section-address-input-location-header">
-                                <p class="text-bold-desktop">Location</p>
+                                <p class="text-bold-desktop">Location*</p>
                             </div>
                             <div class="section-address-input-text section-address-input-location-text">
                                 <input type="text" class="text-desktop" id="location-address" placeholder="E.g: Nguyen Chi Thanh street, Hanoi">
@@ -234,7 +298,7 @@
                   <div class="section-product-list">
                     <div class="section-product-list-item section-product-list-item-1">
                       <div class="product-item-image product-item-1-image">
-                        <img src="./img/pic/item1/itemFront1.JPG" alt="">
+                        <img src="./img/pic/item13/itemFront.png" alt="">
                       </div>
 
                       <div class="product-item-text product-item-1-text">
@@ -261,7 +325,7 @@
                         </div>
 
                         <div class="product-item-text-remove product-item-1-text-remove">
-                          <p class="sub-text-desktop">Remove</p>
+                          <p class="sub-text-desktop"><span onclick="removeID('item1')">Remove</span></p>
                         </div>
                       </div>
 
@@ -374,9 +438,9 @@
                 <div class="col-6 col-md-4 px-lg-3">
                   <div class="footer-menu-item footer-menu-2-item-1">
                     <p class="text-bold-desktop footer-menu-header">Explore</p>
-                    <p class="footer-text"><a href="/" class="text-desktop">Men</a></p>
-                    <p class="footer-text"><a href="/" class="text-desktop">Women</a></p>
-                    <p class="footer-text"><a href="/" class="text-desktop">New Arrivals</a></p>
+                    <p class="footer-text"><a href="/category.html?gender=Men" class="text-desktop">Men</a></p>
+                    <p class="footer-text"><a href="/category.html?gender=Women" class="text-desktop">Women</a></p>
+                    <p class="footer-text"><a href="/category.html?sort=sort-filter-1" class="text-desktop">New Arrivals</a></p>
                   </div>
                 </div>
 
@@ -385,17 +449,17 @@
                     <p class="text-bold-desktop footer-menu-header">Find us on</p>
                     <div class="footer-menu-2-item-icon footer-text">
                       <img src="./img/icon/facebook.svg" alt="fb">
-                      <p><a href="/" class="text-desktop">Facebook</a></p>
+                      <p><a href="https://www.facebook.com/co.nguyenthien.39/" target="_blank" class="text-desktop">Facebook</a></p>
                     </div>
 
                     <div class="footer-menu-2-item-icon footer-text">
                       <img src="./img/icon/Instagram.svg" alt="Ins">
-                      <p><a href="/" class="text-desktop">Instagram</a></p>
+                      <p><a href="https://instagram.com/metho.tic?igshid=YmMyMTA2M2Y" target="_blank" class="text-desktop">Instagram</a></p>
                     </div>
 
                     <div class="footer-menu-2-item-icon footer-text">
                       <img src="./img/icon/Twitter.svg" alt="tw">
-                      <p><a href="/" class="text-desktop">Twitter</a></p>
+                      <p><a href="https://twitter.com/?lang=en" target="_blank" class="text-desktop">Twitter</a></p>
                     </div>
                   </div>
                 </div>
@@ -403,8 +467,8 @@
                 <div class="col-6 col-md-4 px-lg-3 footer-support">
                   <div class="footer-menu-item footer-menu-2-item-3">
                     <p class="text-bold-desktop footer-menu-header">Support</p>
-                    <p class="footer-text"><a href="/" class="text-desktop">Guide</a></p>
-                    <p class="footer-text"><a href="/" class="text-desktop">+84 912345678</a></p>
+                    <p class="footer-text"><a href="/guide.html" class="text-desktop">Guide</a></p>
+                    <p class="footer-text"><a href="tel:+84912345678" class="text-desktop">+84 912345678</a></p>
                   </div>
                 </div>
               </div>

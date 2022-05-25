@@ -52,6 +52,7 @@ section h3{
 }
 
 .section-1-arr{
+    cursor: pointer;
     height: 100%;
     width: 62px;
     display: flex;
@@ -59,6 +60,10 @@ section h3{
     align-items: center;
     background: rgba(255, 255, 255, 0.25);
     transition: all 0.2s ease-in-out;
+}
+
+.section-1-banner-image-click{
+    cursor: pointer;
 }
 
 .section-1-arr:hover{
@@ -80,13 +85,13 @@ section h3{
 .section-1-banner-image-item-1{
     top: 0px;
     left: 0px;
-    transition: all 0.2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .section-1-banner-image-item-2{
     top: 0px;
     left: 100%;
-    transition: all 0.2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .section-1-banner-image-item-mob{
@@ -143,6 +148,7 @@ section h3{
 }
 
 .section-2-contain{
+    cursor: pointer;
     position: relative;
     width: 100%;
     overflow: auto;
@@ -157,10 +163,26 @@ section h3{
     margin-bottom: 20px;
 }
 
+.section-2-card-8{
+    margin-right: 0;
+}
+
 .section-2-card-image{
+    width: 330px;
+    height: 380px;
     position: relative;
     top: 0;
     left: 0;
+}
+
+.section-2-card-image img{
+    width: 330px;
+    height: 380px;
+    /* object-fit: cover; */
+}
+
+.section-2-card-image > img{
+    object-fit: cover;
 }
 
 .section-2-card:hover .section-2-card-image-overlay{
@@ -262,6 +284,7 @@ section h3{
         margin: 0;
         width: 100%;
         padding: 0px 5%;
+        margin-bottom: 40px;
     }
     
     .section-1-banner-text h2{
@@ -292,12 +315,18 @@ section h3{
         display: none;
     }
     .section-1-banner-image-item-mob{
+        cursor: pointer;
         display: block;
         position: relative;
         top: 0px;
         left: 0px;
         aspect-ratio: 432/614;
         overflow: hidden;
+    }
+    .section-1-banner-image-click{
+        flex-grow: 1;
+        height: 100%;
+        background-color: transparent;
     }
     .section-1-banner-image-item-mob:hover .section-1-banner-image-overlay-mob{
         opacity: 1.0;
@@ -319,6 +348,7 @@ section h3{
         width: 100%;
         margin: 0;
         position: absolute;
+        transition: all 1s ease-in-out;
     }
     .section-1-banner-image-item-mob-1{
         top: 0px;
@@ -350,6 +380,7 @@ section h3{
     flex-wrap: wrap;
 }
 .section-3-fg-card{
+    cursor: pointer;
     width: calc(100%/3 - 12px);
 }
 
