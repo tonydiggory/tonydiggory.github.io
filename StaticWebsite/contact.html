@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <title>Ng.ThCo | Home</title>
+</head>
+<body>
+    <header id="desktop-header">
+        <div id="desktop-header-logo">
+            <a href=""><img src="./img/logo.png" alt="Brand Logo"></a>
+        </div>
+
+        <nav id="desktop-header-navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Education</a></li>
+                <li><a href="category.html#novel">Entertainment</a></li>
+                <li class="desktop-header-navbar-item-active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="contact-heading">Contact Us</h1>
+
+        <form action="#">
+            <label class="mobile-change" for="purpose">Select your contact purpose:</label>
+            <select id="purpose" name='purpose-list'>
+                <option value='' selected>Please Select</option>
+                <option value='sell'>I want to sell books</option>
+                <option value='buy'>I want to buy books</option>
+            </select>
+
+            <br><br>
+
+            <label class="mobile-change" for="username">Enter your name:</label>
+            <input type="text" id="username" name="name" placeholder="e.g: Nguyen Thien Co">
+
+            <br><br>
+
+            <label class="mobile-change" for="useremail">Enter your email:</label>
+            <input type="email" id="useremail" name="email" placeholder="e.g: s12345567">
+
+            <br><br>
+
+            <label class="mobile-change" for="userphone">Enter your phone number:</label>
+            <input type="number" id="userphone" name="phone" placeholder="e.g: s12345567">
+
+            <br><br>
+
+            <p>How can we contact you?</p>
+            <input type="checkbox" id="byemail" name="methodcontact[]">
+            <label for="byemail">By Email</label>
+            <input type="checkbox" id="byphone" name="methodcontact[]">
+            <label for="byphone">By Phone</label>
+
+            <br><br>
+
+            <p>Do you want to receive our weekly newsletter</p>
+            <input type="radio" id="yes" name="consent">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="consent">
+            <label for="no">No</label>
+
+            <br><br>
+
+            <textarea name="note" id="note" cols="30" rows="10" placeholder="Note: ..."></textarea>
+
+            <br><br>
+
+            <input type="reset" name="reset-btn" id="reset-btn" value="Reset">
+
+            <input type="submit" name="submit-btn" id="submit-btn" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <nav>
+            <ul id="explore" class="footer-navbar-col">
+                <li class="footer-navbar-heading"><p>Explore</p></li>
+                <li class="footer-navbar-item"><a href="category.html">Education</a></li>
+                <li class="footer-navbar-item"><a href="category.html#novel">Entertainment</a></li>
+            </ul>
+
+            <ul id="support" class="footer-navbar-col">
+                <li class="footer-navbar-heading"><p>Support</p></li>
+                <li class="footer-navbar-item"><a href="contact.html">Contact</a></li>
+                <li class="footer-navbar-item"><a href="#">About Us</a></li>
+            </ul>
+
+            <ul id="legal" class="footer-navbar-col">
+                <li class="footer-navbar-heading"><p>Legal</p></li>
+                <li class="footer-navbar-item"><a href="#">Privacy Policy</a></li>
+                <li class="footer-navbar-item"><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+
+        <div id="copyright">
+            <p>2022 &copy;Ng.ThCo VietNam</p>
+            <ul>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Cookies Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

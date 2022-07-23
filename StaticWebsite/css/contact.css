@@ -1,0 +1,24 @@
+#contact-heading{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 960px){
+    .mobile-change{
+        display: block;
+        width: 100%;
+    }
+}
