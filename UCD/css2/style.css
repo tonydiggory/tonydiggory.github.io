@@ -48,6 +48,8 @@ header{
     height: 100%;
     width: 301px;
     border-right: 1px solid #ffffff;
+
+    cursor: pointer;
 }
 
 #logo-container img{
