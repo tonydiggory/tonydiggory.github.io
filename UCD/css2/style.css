@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+  
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #343434;
+}
+  
+img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+  
+a{
+    text-decoration: none;
+    color: #343434;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.text{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    height: 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-container{
+    height: 100%;
+    width: 301px;
+    border-right: 1px solid #ffffff;
+}
+
+#logo-container img{
+    height: 100%;
+    width: 100%;
+}
+
+#left-header{
+    background-color: #971D27;
+    height: 100%;
+    flex-grow: 1;
+}
+
+#search{
+    height: calc(50% - 1px);
+    width: 100%;
+    padding: 19px 45px;
+    border-bottom: 1px solid #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search-language{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-language-logo{
+    width: 28px;
+    height: 20px;
+
+    cursor: pointer;
+}
+
+.search-language-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#search-language-logo-1{
+    margin-right: 10px;
+}
+
+#search-tool{
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#search-tool p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+#search-tool img{
+    height: 22px;
+    width: 22px;
+    margin-left: 8px;
+
+    cursor: pointer;
+}
+
+#navbar{
+    position: relative;
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-contain{
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.navbar-contain p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.navbar-contain img{
+    width: 7px;
+    height: 5px;
+    margin-left: 5px;
+}
+
+.d-sub, .event-sub{
+    position: absolute;
+    bottom: -132px;
+    left: 0;
+
+    width: 100%;
+}
+
+.display-sub{
+    position: absolute;
+    bottom: -388px;
+    left: 0;
+
+    width: 100%;
+}
+
+.collection-sub{
+    position: absolute;
+    bottom: -518px;
+    left: 0;
+
+    width: 100%;
+}
+
+.more-sub{
+    position: absolute;
+    bottom: -324px;
+    left: 0;
+
+    width: 100%;
+}
+
+.service-sub-list img{
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.sub-list-item{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 4px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: #971D27;
+}
+
+.navbar-contain:hover .sub-list-item{
+    display: flex;
+}
+
+.artifact-display{
+    padding: 30px;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #e6e6e6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#desc{
+    padding: 20px 160px;
+}
+
+.desc-contain{
+    padding: 16px 0px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.heading p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+
+    color: #212529;
+}
+
+.desc-f{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.desc-cate{
+    width: 40%;
+
+    font-weight: 700;
+    font-size: 16px;
+    color: #212529;
+    line-height: 24px;
+}
+
+.desc-det{
+    width: 60%;
+
+    font-weight:400;
+    font-size: 16px;
+    color: #212529;
+    line-height: 24px;
+}
+
+.loc p, .loc a{
+    font-weight:400;
+    font-size: 16px;
+    color: #212529;
+    line-height: 24px;    
+}
+
+.loc a{
+    font-weight: 500;
+    text-decoration: underline;
+    color: #a50021;
+
+    cursor: pointer;
+}
+
+.medium, .loc{
+    border-bottom: 2px dotted #00000080;
+}
+
+footer{
+    width: 100%;
+}
+
+footer img{
+    width: 100%;
+}
